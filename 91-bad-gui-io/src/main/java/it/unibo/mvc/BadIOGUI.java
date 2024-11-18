@@ -75,8 +75,8 @@ public class BadIOGUI {
             @Override
             public void actionPerformed(final ActionEvent e) {
                 try { 
-                    final List<String> lines = Files.readAllLines(new File(PATH).toPath());
-                    for (final String line : lines) {
+                    final List<String> text = Files.readAllLines(new File(PATH).toPath());
+                    for (final String line : text) {
                         System.out.println(line); // NOPMD: allowed as this is just an exercise
                     }
                     } catch (IOException e1) {
@@ -86,6 +86,7 @@ public class BadIOGUI {
             }
         });
     }
+
     private void display() {
         /*
          * Make the frame one fifth the resolution of the screen. This very method is
