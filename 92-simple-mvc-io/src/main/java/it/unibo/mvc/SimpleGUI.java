@@ -16,7 +16,7 @@ import javax.swing.JTextArea;
  * A very simple program using a graphical interface.
  * 
  */
-public final class SimpleGUI {
+public final class SimpleGUI{
 
     private static final String TITLE = "IO Controller";
     private static final int PROPORTION = 5;
